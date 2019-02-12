@@ -10,7 +10,7 @@ int main(){
     auto search = map_words.begin();
     while(cin >> action){
         if(action == "minimum?"){
-            if(map_words.empty()) cout << "indefinite minimun" << endl;
+            if(map_words.empty()) cout << "indefinite minimum" << endl;
             else {
                 auto it = map_words.begin();
                 cout << "minimum: " << it->first << ", " << it->second << " time(s)" << endl;
