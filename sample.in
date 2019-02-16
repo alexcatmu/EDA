@@ -1,16 +1,4 @@
-LOGIN destello
-LOGIN fxtr
-PLAY destello fxtr
-PLAY destello fxtr
-LOGIN carokhan
-GET_ELO destello
-GET_ELO fxtr
-LOGOUT destello
-PLAY carokhan fxtr
-LOGOUT fxtr
-LOGIN cerebrus
-LOGOUT cerebrus
-LOGIN grassman
-PLAY destello grassman
-PLAY grassman destello
-LOGIN cusell
+abc  de  xy
+abc  de  xy  END
+a a b a b k s ie END
+de abc de de QUIT
