@@ -3,20 +3,20 @@
 
 using namespace std;
 
-int exponent(double n, int k){
+int modular_exponent(long n, int k, long m){
     if(k == 0) return 1;
     else {
-        double y = exponent(n, k/2);
-        if(k %2 == 0) return y * y;
-        else return y * y * n;
+        long y = modular_exponent(n, k/2, m);
+        if(k %2 == 0) return (y * y)%m;
+        else return (y * y * n)%m;
     }
 }
 
 int main(){
-    double n, m;
+    long n, m;
     int k;
-    cin >> n >> k >> m;
-    double n_exp_k = exponent(n,k);
-    cout << n_exp_k << endl;
-    //cout << n_exp_k % m << endl;
+    while(cin >> n >> k >> m){
+        long n_exp_k = modular_exponent(n,k,m);
+        cout << n_exp_k % m << endl;
+    }
 }
