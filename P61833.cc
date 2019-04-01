@@ -29,16 +29,19 @@ vector<int> potenciaMod(vector<int> M, int m){
 
 vector<int> potenciaMod(vector<int> M, vector<int> x, int m){
     vector<int> v(4);
+    
+    cout << M[0] << "     " << M[1] << endl << M[2] << "     " << M[3] << endl << endl;
     v[0] = multiply_matrix(M,M,0);
     v[1] = multiply_matrix(M,M,1);
     v[2] = multiply_matrix(M,M,2);
     v[3] = multiply_matrix(M,M,3);
-    
+    cout << M[0] << "     " << M[1] << endl << M[2] << "     " << M[3] << endl << endl;
+    cout << v[0] << "     " << v[1] << endl << v[2] << "     " << v[3] << endl;
+    cout << endl << endl;
     v[0] = multiply_matrix(v,x,0)%m;
     v[1] = multiply_matrix(v,x,1)%m;
     v[2] = multiply_matrix(v,x,2)%m;
     v[3] = multiply_matrix(v,x,3)%m;
-    
     return v;
 }
 
